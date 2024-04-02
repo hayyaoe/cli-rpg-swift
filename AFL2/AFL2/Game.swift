@@ -53,6 +53,7 @@ struct Game{
         var isQuit = false
         var choice = ""
         repeat{
+            choice = ""
             switch player.exp{
             case 100..<400:
                 print("You're pretty strong now, you can train even faster by hunting some trolls")
@@ -84,7 +85,7 @@ struct Game{
             Your Choice ?
             """, terminator: " ")
             if let input = readLine(), !input.isEmpty && input.allSatisfy({ $0.isLetter }){
-                choice = input
+                choice = input.uppercased(with: .autoupdatingCurrent)
             }
             
             if choice == "S"{
@@ -123,15 +124,33 @@ struct Game{
     }
     
     private func swampOfSlimes(){
-        
+        var enemies: [Enemy] = []
+        for index in 1...4{
+            enemies.append(Slime(name: "Slime \(index)"))
+        }
+        var battle = Battle(battleField: "Swamp of Slimes", player: player, enemies: enemies,selectedEnemy: Slime(), turn: 1)
+        battle.intro(message: "You go to the swamp of slimes and fight some slimes here.")
+        battle.fight()
     }
     
     private func forestOfTrolls(){
-        
+        var enemies: [Enemy] = []
+        for index in 1...4{
+            enemies.append(Troll(name: "Slime \(index)"))
+        }
+        var battle = Battle(battleField: "Forest of Trolls", player: player, enemies: enemies,selectedEnemy: Troll(), turn: 1)
+        battle.intro(message: "You go to the forest of trolls and fight some trolls here.")
+        battle.fight()
     }
     
     private func mountainOfGolems(){
-        
+        var enemies: [Enemy] = []
+        for index in 1...4{
+            enemies.append(Golem(name: "Slime \(index)"))
+        }
+        var battle = Battle(battleField: "Mountain of Golems", player: player, enemies: enemies,selectedEnemy: Golem(), turn: 1)
+        battle.intro(message: "You go to the mountain of golems and fight some golems here.")
+        battle.fight()
     }
     
     private func campaignToDefeatDemonLord(){

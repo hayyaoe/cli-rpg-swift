@@ -12,10 +12,18 @@
 		7E2F1F3B2BAD204F003BE66F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F1F3A2BAD204F003BE66F /* Player.swift */; };
 		7E2F1F3D2BAD2061003BE66F /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F1F3C2BAD2061003BE66F /* Enemy.swift */; };
 		7E2F1F3F2BAD2071003BE66F /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F1F3E2BAD2071003BE66F /* Battle.swift */; };
+		7E7A66CB2BBC55500022AD9B /* Gel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A66CA2BBC55500022AD9B /* Gel.swift */; };
+		7E7A66CD2BBC58A40022AD9B /* SlimeCrystal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A66CC2BBC58A40022AD9B /* SlimeCrystal.swift */; };
+		7E7A66CF2BBC5B5A0022AD9B /* ItemDropSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A66CE2BBC5B5A0022AD9B /* ItemDropSystem.swift */; };
 		7E7FC02D2BAEB63700B548B2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC02C2BAEB63700B548B2 /* Item.swift */; };
 		7E7FC02F2BAEB63F00B548B2 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC02E2BAEB63F00B548B2 /* Ability.swift */; };
 		7E7FC0312BAEBE2A00B548B2 /* Heal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC0302BAEBE2A00B548B2 /* Heal.swift */; };
 		7E7FC0352BAEC26E00B548B2 /* ManaRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FC0342BAEC26E00B548B2 /* ManaRecovery.swift */; };
+		7ECED5A22BBB175100C6E3E6 /* EnemyDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECED5A12BBB175100C6E3E6 /* EnemyDrop.swift */; };
+		7ECED5A42BBB18A000C6E3E6 /* Potion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECED5A32BBB18A000C6E3E6 /* Potion.swift */; };
+		7EDF36542BB9441300729942 /* Slime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF36532BB9441300729942 /* Slime.swift */; };
+		7EDF36562BB9457200729942 /* Troll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF36552BB9457200729942 /* Troll.swift */; };
+		7EDF36582BB94B7F00729942 /* Golem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF36572BB94B7F00729942 /* Golem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,10 +45,18 @@
 		7E2F1F3A2BAD204F003BE66F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7E2F1F3C2BAD2061003BE66F /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		7E2F1F3E2BAD2071003BE66F /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		7E7A66CA2BBC55500022AD9B /* Gel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gel.swift; sourceTree = "<group>"; };
+		7E7A66CC2BBC58A40022AD9B /* SlimeCrystal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimeCrystal.swift; sourceTree = "<group>"; };
+		7E7A66CE2BBC5B5A0022AD9B /* ItemDropSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDropSystem.swift; sourceTree = "<group>"; };
 		7E7FC02C2BAEB63700B548B2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7E7FC02E2BAEB63F00B548B2 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
 		7E7FC0302BAEBE2A00B548B2 /* Heal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heal.swift; sourceTree = "<group>"; };
 		7E7FC0342BAEC26E00B548B2 /* ManaRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManaRecovery.swift; sourceTree = "<group>"; };
+		7ECED5A12BBB175100C6E3E6 /* EnemyDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyDrop.swift; sourceTree = "<group>"; };
+		7ECED5A32BBB18A000C6E3E6 /* Potion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potion.swift; sourceTree = "<group>"; };
+		7EDF36532BB9441300729942 /* Slime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slime.swift; sourceTree = "<group>"; };
+		7EDF36552BB9457200729942 /* Troll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Troll.swift; sourceTree = "<group>"; };
+		7EDF36572BB94B7F00729942 /* Golem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,15 +91,63 @@
 			children = (
 				7E2F1F312BAD2024003BE66F /* main.swift */,
 				7E2F1F382BAD2043003BE66F /* Game.swift */,
-				7E2F1F3A2BAD204F003BE66F /* Player.swift */,
-				7E2F1F3C2BAD2061003BE66F /* Enemy.swift */,
 				7E2F1F3E2BAD2071003BE66F /* Battle.swift */,
-				7E7FC02E2BAEB63F00B548B2 /* Ability.swift */,
-				7E7FC02C2BAEB63700B548B2 /* Item.swift */,
+				7E7A66CE2BBC5B5A0022AD9B /* ItemDropSystem.swift */,
+				7EDF36522BB943E400729942 /* Player */,
+				7EDF36512BB9437600729942 /* Item */,
+				7EDF36502BB9434600729942 /* Enemy */,
+			);
+			path = AFL2;
+			sourceTree = "<group>";
+		};
+		7E7A66D02BBC611C0022AD9B /* EnemyDrops */ = {
+			isa = PBXGroup;
+			children = (
+				7E7A66CA2BBC55500022AD9B /* Gel.swift */,
+				7E7A66CC2BBC58A40022AD9B /* SlimeCrystal.swift */,
+			);
+			path = EnemyDrops;
+			sourceTree = "<group>";
+		};
+		7E7A66D12BBC61390022AD9B /* Potions */ = {
+			isa = PBXGroup;
+			children = (
 				7E7FC0302BAEBE2A00B548B2 /* Heal.swift */,
 				7E7FC0342BAEC26E00B548B2 /* ManaRecovery.swift */,
 			);
-			path = AFL2;
+			path = Potions;
+			sourceTree = "<group>";
+		};
+		7EDF36502BB9434600729942 /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				7E2F1F3C2BAD2061003BE66F /* Enemy.swift */,
+				7EDF36532BB9441300729942 /* Slime.swift */,
+				7EDF36552BB9457200729942 /* Troll.swift */,
+				7EDF36572BB94B7F00729942 /* Golem.swift */,
+			);
+			path = Enemy;
+			sourceTree = "<group>";
+		};
+		7EDF36512BB9437600729942 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				7E7FC02C2BAEB63700B548B2 /* Item.swift */,
+				7ECED5A12BBB175100C6E3E6 /* EnemyDrop.swift */,
+				7ECED5A32BBB18A000C6E3E6 /* Potion.swift */,
+				7E7A66D12BBC61390022AD9B /* Potions */,
+				7E7A66D02BBC611C0022AD9B /* EnemyDrops */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		7EDF36522BB943E400729942 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				7E2F1F3A2BAD204F003BE66F /* Player.swift */,
+				7E7FC02E2BAEB63F00B548B2 /* Ability.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,15 +208,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDF36562BB9457200729942 /* Troll.swift in Sources */,
 				7E2F1F3D2BAD2061003BE66F /* Enemy.swift in Sources */,
 				7E2F1F322BAD2024003BE66F /* main.swift in Sources */,
 				7E2F1F3B2BAD204F003BE66F /* Player.swift in Sources */,
+				7ECED5A22BBB175100C6E3E6 /* EnemyDrop.swift in Sources */,
 				7E7FC02F2BAEB63F00B548B2 /* Ability.swift in Sources */,
+				7ECED5A42BBB18A000C6E3E6 /* Potion.swift in Sources */,
 				7E2F1F3F2BAD2071003BE66F /* Battle.swift in Sources */,
+				7EDF36582BB94B7F00729942 /* Golem.swift in Sources */,
+				7E7A66CD2BBC58A40022AD9B /* SlimeCrystal.swift in Sources */,
 				7E7FC02D2BAEB63700B548B2 /* Item.swift in Sources */,
 				7E2F1F392BAD2043003BE66F /* Game.swift in Sources */,
 				7E7FC0352BAEC26E00B548B2 /* ManaRecovery.swift in Sources */,
+				7EDF36542BB9441300729942 /* Slime.swift in Sources */,
 				7E7FC0312BAEBE2A00B548B2 /* Heal.swift in Sources */,
+				7E7A66CF2BBC5B5A0022AD9B /* ItemDropSystem.swift in Sources */,
+				7E7A66CB2BBC55500022AD9B /* Gel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
