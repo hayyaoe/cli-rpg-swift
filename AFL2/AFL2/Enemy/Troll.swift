@@ -12,27 +12,46 @@ class Troll: Enemy{
     
     var name: String
     
-    var atk: Int
-    
     var hp: Int
     
     var expDrop: Int
     
     var weakness: String
     
-    var attack: String
-    
     var maxHp: Int
     
-    init(name: String = "Troll", atk: Int = Int.random(in: 10...15), hp: Int = Int.random(in: 50...75), expDrop: Int = Int.random(in: 20...25), weakness: String = "The weakness is the head", attack: String = "Punch" ) {
+    init(name: String = "Troll", hp: Int = Int.random(in: 50...75), expDrop: Int = Int.random(in: 20...25), weakness: String = "The weakness is the head") {
         self.name = name
-        self.atk = atk
         self.hp = hp
         self.expDrop = expDrop
         self.weakness = weakness
-        self.attack = attack
         self.maxHp = hp
-        self.itemDrop = []
+        self.itemDrop = [TrollMeat(),TrollBlood()]
+    }
+    
+    func attackPlayer(player: Player, multiplier: Double) {
+        print("\(name) attacks!")
+        let attacks = [
+                    smash,
+                    stomp
+                ]
+                
+                let randomIndex = Int.random(in: 0..<attacks.count)
+                
+                let damage = Double(attacks[randomIndex]()) * multiplier
+                
+                print("Damage: \(Int(damage))")
+                player.hp -= Int(damage)
+    }
+    
+    func smash() -> Int {
+        print("\(name) smashes the ground!")
+        return Int.random(in: 20...25)
+    }
+    
+    func stomp() -> Int {
+        print("\(name) stomps on you!")
+        return Int.random(in: 25...30)
     }
     
     

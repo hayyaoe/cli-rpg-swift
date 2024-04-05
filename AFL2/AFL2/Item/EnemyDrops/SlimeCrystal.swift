@@ -14,21 +14,22 @@ class SlimeCrystal: EnemyDrop{
     
     var name = "Slime Crystal"
     
-    var description = "Emits slimy aura, you could use it for something else..."
+    var description = "Emits slimy aura, you could use it for something..."
+    
+    var manaRecovered = Int.random(in: 0...10)
     
     func sell(player: Player) {
         player.coin += price
         print("You sold a \(name) for \(price) coins")
     }
     
-    func use(player: Player) {
         func use(player: Player) {
             print("you absorb the \(name).")
             sleep(1)
-            let manaRecovered = Int.random(in: 0...10)
+            let manaRecovered = manaRecovered
             
             if manaRecovered > 0{
-                print("you feel the \(name) makes increase your mana aura")
+                print("you feel the \(name) increase your mana aura")
                 sleep(1)
                 print("mp +\(manaRecovered)")
                 player.mp += manaRecovered
@@ -39,7 +40,7 @@ class SlimeCrystal: EnemyDrop{
                 print("it does nothing.")
             }
         }
-    }
+    
     
     
 }

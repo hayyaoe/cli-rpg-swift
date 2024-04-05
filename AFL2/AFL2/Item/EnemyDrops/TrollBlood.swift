@@ -1,26 +1,26 @@
 //
-//  Gel.swift
+//  TrollBlood.swift
 //  AFL2
 //
-//  Created by RabiRabi Channel on 02/04/24.
+//  Created by RabiRabi Channel on 05/04/24.
 //
 
 import Foundation
 
-class Gel: EnemyDrop{
-    var dropRate = 0.7
+class TrollBlood: EnemyDrop{
+    var dropRate = 0.5
 
-    var price = Int.random(in: 5...7)
+    var price = Int.random(in: 10...15)
     
-    var name = "Gel"
+    var name = "Troll Blood"
     
-    var description = "The thing is sticky"
+    var description = "The thing is nasty"
     
-    var hpRecovered = Int.random(in: 0...5)
+    var hpRecovered = Int.random(in: 25...28)
     
     func sell(player: Player) {
         player.coin += price
-        print("You sold a \(name) for \(price) coins")
+        print("You sold a jug of \(name) for \(price) coins")
     }
     
     func use(player: Player) {
@@ -29,14 +29,12 @@ class Gel: EnemyDrop{
         let healthRecovered = hpRecovered
         
         if healthRecovered > 0{
-            print("you feel the \(name) makes your wound a bit better")
+            print("you feel the \(name) heals your wound")
             print("hp +\(healthRecovered)")
             player.hp += healthRecovered
             if player.hp > player.maxHp{
                 player.hp = player.maxHp
             }
-        }else{
-            print("it does nothing.")
         }
     }
     

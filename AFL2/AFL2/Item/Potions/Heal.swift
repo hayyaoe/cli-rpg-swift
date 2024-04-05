@@ -14,14 +14,14 @@ class Heal:Potion{
     
     let healthRecovered: Int
     
-    init(healthRecovered: Int, description: String, name: String) {
-        self.healthRecovered = healthRecovered
-        self.description = description
+    init(name: String, description: String, healthRecovered: Int) {
         self.name = name
+        self.description = description
+        self.healthRecovered = healthRecovered
     }
     
     func drink(player: Player) {
-        print("You drink the \(name) potion, hp+ \(healthRecovered)")
+        print("You drink the \(name) potion, \(healthRecovered) hp recovered")
         player.hp += healthRecovered
         if player.hp > player.maxHp{
             player.hp = player.maxHp

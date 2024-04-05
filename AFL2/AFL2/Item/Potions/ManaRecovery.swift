@@ -22,7 +22,7 @@ class ManaRecovery:Potion{
     }
     
     func drink(player: Player){
-        print("You drink the \(name) potion, hp+ \(manaRecovered)")
+        print("You drink the \(name) potion, \(manaRecovered) mana recovered")
         player.mp = manaRecovered
         if player.mp > player.maxMp{
             player.mp = player.maxMp

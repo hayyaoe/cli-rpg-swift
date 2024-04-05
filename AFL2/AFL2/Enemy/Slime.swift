@@ -8,13 +8,12 @@
 import Foundation
 
 class Slime: Enemy{
+    
     var itemDrop: [EnemyDrop]
     
     var maxHp: Int
     
     var name: String
-    
-    var atk: Int
     
     var hp: Int
     
@@ -22,17 +21,44 @@ class Slime: Enemy{
     
     var weakness: String
     
-    var attack: String
-    
-    init(name: String = "Slime", atk: Int = Int.random(in: 1...3), hp: Int = Int.random(in: 10...20), expDrop: Int = Int.random(in: 5...8), weakness: String = "Slime has no Weakness", attack: String = "Headbuts") {
+    init(name: String = "Slime", hp: Int = Int.random(in: 10...20), expDrop: Int = Int.random(in: 5...8), weakness: String = "Slime has no Weakness") {
         self.name = name
-        self.atk = atk
         self.hp = hp
         self.expDrop = expDrop
         self.weakness = weakness
-        self.attack = attack
         self.maxHp = hp
         self.itemDrop = [Gel(), SlimeCrystal()]
+    }
+    
+    func attackPlayer(player: Player, multiplier: Double) {
+        print("\(name) attacks!")
+        let attacks = [
+                acidSlime,
+                headButt,
+                suffocate
+            ]
+            
+            let randomIndex = Int.random(in: 0..<attacks.count)
+            
+            let damage = Double (attacks[randomIndex]()) * Double(multiplier)
+            
+            print("Damage: \(Int (damage))")
+            player.hp -= Int(damage)
+    }
+    
+    func acidSlime()->Int{
+        print("\(name) spits acid!")
+        return Int.random(in: 6...8)
+    }
+    
+    func headButt()-> Int{
+        print("\(name) head butts!")
+        return Int.random(in: 2...3)
+    }
+    
+    func suffocate()-> Int{
+        print("\(name) jumps to your face!")
+        return Int.random(in: 8...10)
     }
 
 }
